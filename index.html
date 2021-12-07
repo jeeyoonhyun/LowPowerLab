@@ -3,36 +3,40 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <link rel="stylesheet" href="./style.css">
     <title>Low Power Lab</title>
 </head>
 
 <body>
-
     <div class="container">
         <!-- header -->
-        <div class="header logo block">
+        <div class="header logo navbar-block">
             <h1>£ØW<br>Þw®<br>L∆ß</h1>
         </div>
-        <nav class="header navbar block">
+        <nav class="header navbar navbar-block">
             <ul>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#people">PEOPLE</a></li>
                 <li><a href="#tools">TOOLS</a></li>
+                <li><a href="#people">PEOPLE</a></li>
+            </ul>
+            <ul>
                 <li><a href="#research">RESEARCH</a></li>
                 <li><a href="#courses">COURSES</a></li>
                 <li><a href="#publications">PUBLICATIONS</a></li>
             </ul>
         </nav>
-        <div class = "header serverinfo block">
-            <p>2021-08-01 23:55:55 ET</p>
-            <p>solar server status: ON</p>
-            <p>page size: 500kb</p>
-            <p>loading time:50ms</p>
+        <div class="header serverinfo navbar-block">
+            <h2>2021-08-01 23:55:55 ET</h2>
+            <ul>
+                <li>solar server status: ON</li>
+                <li>page size: 500kb</li>
+                <li>loading time:50ms</li>
+            </ul>
         </div>
         <!-- About (row 1)-->
-        <section class="about block">
+        <section class="about content-block" id="about">
             <div class="title-small">
                 <h2>
                     <pre alt="ABOUT">∆ßØUT</pre>
@@ -47,30 +51,29 @@
             </div>
         </section>
         <!-- Tools (row 1) -->
-        <section class="tools block">
-            <div class="title-middle">
+        <section class="tools" id="tools">
+            <div class="tools-title-block title-block">
                 <h2>
                     <pre alt="TOOLS">TÕÖĿS</pre>
                 </h2>
             </div>
-            <div id="tools-img">
-                <img src="">
+            <div class="tools-img-div">
+                <img id="tools-img" src="src/SolarBattery.gif">
             </div>
-            <div id="tools-desc">
+            <div class="tools-desc">
                 <h3>Solar-powered server</h3>
                 <p>Solar-powered Raspberry Pi</p>
             </div>
         </section>
         <!-- People (row 2) -->
-        <section class="people block">
-            <div class="title-full">
+        <section class="people" id="people">
+            <div class="people-title-block title-block">
                 <h2>
                     <pre alt="PEOPLE">PEOPLE</pre>
                 </h2>
             </div>
-            <div class="container-people">
-                <div id="card-people-big">
-                    <img src="">
+                <div class="card-people-big card">
+                    <img src="src/silhouette.png">
                     <h3>Benedetta Piantella</h3>
                     <h4>Professor</h4>
                     <p>Benedetta is a designer turned educator and humanitarian technologist. She was involved in
@@ -80,67 +83,70 @@
                         from STEM and Robotics courses to K-12 students to Ideation & Prototyping, HCI, Physical
                         Computing and Global Engineering classes to undergraduate and graduate students.</p>
                 </div>
-                <div id="card-people-small">
-                    <img src="">
+                <div class="card-people-small card">
+                    <img src="src/silhouette.png">
+                    <h3>Pedro Galvao Cesar de Oliveira</h3>
+                    <h4>Design Researcher & NYU Faculty</h4>
+                    <p>description</p>
+                </div>
+                <div class="card-people-small card">
+                    <img src="src/silhouette.png">
                     <h3>Jeeyoon Hyun</h3>
                     <h4>Researcher</h4>
                     <p>description</p>
                 </div>
-                <div id="card-people-small">
-                    <img src="">
+                <div class="card-people-small card">
+                    <img src="src/silhouette.png">
                     <h3>Alex Nathanson</h3>
                     <h4>NYU Faculty</h4>
                     <p>description</p>
                 </div>
-                <div id="card-people-small">
-                    <img src="">
+                <div class="card-people-small card">
+                    <img src="src/silhouette.png">
                     <h3>Keita Ohshiro</h3>
                     <h4>Researcher</h4>
                     <p>description</p>
                 </div>
-            </div>
+
         </section>
         <!-- Research(row 3) -->
-        <section class ="research block">
-            <div class="title-full">
+        <section class="research" id="research">
+            <div class="research-title-block title-block">
                 <h2>
                     <pre alt="RESEARCH">ŘЄŞEÅŘℂH</pre>
                 </h2>
             </div>
-            <div id="container-research">
-                <div id="card-research">
-                    <img src="">
-                    <h3>Solar Powered Media</h3>
-                    <h4><a href="solarpowered.media">solarpowered.media</a></h4>
-                    <p>TBD</p>
-                    <p>See details</p>
-                </div>
-                <div id="card-research">
-                    <img src="">
-                    <h3>Solar Protocol</h3>
-                    <h4><a href="solarprotocol.net">solarprotocol.net</a></h4>
-                    <p>TBD</p>
-                    <p>See details</p>
-                </div>
-                <div id="card-research">
-                    <img src="">
-                    <h3>GIGA Node</h3>
-                    <h4><a href="unicef.org/innovation/giga">unicef.org/innovation/giga</a></h4>
-                    <h4><a href="gigaconnect.org">gigaconnect.org</a></h4>
-                    <p>TBD</p>
-                    <p>See details</p>
-                </div>
+            <div class="card-research card">
+                <img src="">
+                <h3>Solar Powered Media</h3>
+                <h4><a href="solarpowered.media">solarpowered.media</a></h4>
+                <p>TBD</p>
+                <p>See details</p>
+            </div>
+            <div class="card-research card">
+                <img src="">
+                <h3>Solar Protocol</h3>
+                <h4><a href="solarprotocol.net">solarprotocol.net</a></h4>
+                <p>TBD</p>
+                <p>See details</p>
+            </div>
+            <div class="card-research card">
+                <img src="">
+                <h3>GIGA Node</h3>
+                <h4><a href="unicef.org/innovation/giga">unicef.org/innovation/giga</a></h4>
+                <h4><a href="gigaconnect.org">gigaconnect.org</a></h4>
+                <p>TBD</p>
+                <p>See details</p>
             </div>
         </section>
         <!-- Courses (row 4) -->
-        <section class ="courses block">
-            <div class="title-full">
+        <section class="courses" id="courses">
+            <div class="courses-title-block title-block">
                 <h2>
                     <pre alt="COURSES">COURSES</pre>
                 </h2>
             </div>
-            <div id="container-courses">
-                <div id="card-courses">
+                <div class="card-courses">
                     <img src="">
                     <h3>Solar Powered Media VIP</h3>
                     <h4>Spring 2021 / Fall 2021</h4>
@@ -149,7 +155,7 @@
                         environmental impact of online media content and Web design.</p>
                     <p>View syllabus</p>
                 </div>
-                <div id="card-courses">
+                <div class="card-courses">
                     <img src="">
                     <h3>Practical Guide to Resilience</h3>
                     <h4>Fall 2020/Spring 2021</h4>
@@ -158,7 +164,7 @@
                         design opportunities. </p>
                     <p>View syllabus</p>
                 </div>
-                <div id="card-courses">
+                <div class="card-courses">
                     <img src="">
                     <h3>UNChained</h3>
                     <h4>Fall 2018</h4>
@@ -168,18 +174,35 @@
                         the most vulnerable population in the world: children. </p>
                     <p>View syllabus</p>
                 </div>
-            </div>
         </section>
         <!-- Articles / Publications (row 5) -->
-        <section class ="articles block">
-            <div class="title-full">
+        <section class="publications" id="publications">
+            <div class="publications-title-block title-block">
                 <h2>
                     <pre alt="Articles and Publications">ARTICLES/PUBLICATIONS</pre>
                 </h2>
             </div>
+            <div class="card-publications card">
+                <h3>Solar-Powered Server: Designing for a More Energy Positive Internet</h3>
+                <h4>Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems</h4>
+                <p>Apr 2021</p>
+                <p class="read">Read article</p>
+            </div>
+            <div class="card-publications card">
+                <h3>Solar Protocol: Reimagining The Internet Through Natural Logic” with Tega Brain and Benedetta Piantella, NYU Tandon </h3>
+                <h4>NYU CUSP Lecture Series</h4>
+                <p>Mar 2021</p>
+                <p class="read">Read article</p>
+            </div>
+            <div class="card-publications card">
+                <h3>The Future Is Female (Part 2)</h3>
+                <h4>The Future Of</h4>
+                <p>Apr 2021</p>
+                <p class="read">Read article</p>
+            </div>
         </section>
         <!-- footer -->
-        <footer class ="footer block">
+        <footer class="footer title-block">
             <h3>2 MetroTech Center #821<br>
                 Brooklyn, NY 11201<br>
                 lowpwrlab@gmail.com</h3>
